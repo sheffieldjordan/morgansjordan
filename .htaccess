@@ -1,0 +1,7 @@
+Options +FollowsSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.morgansjordan\.com$
+RewriteRule ^/?$ "https\:\/\/morgansjordan\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^139\.162\.139\.191
+RewriteRule %{HTTP_USER_AGENT} libwww-perl.*
+RewriteRule .* ? [F,L] 
